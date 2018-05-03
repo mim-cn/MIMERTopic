@@ -7,9 +7,26 @@
 //
 
 #include <iostream>
+#include "URLPath.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main(int argc, const char * argv[])
+{
+    string path = "user/profile/edit?op=xxx&uid=222";
+    std::cout << path << endl;
+    MIM::URLPath urlPath(path);
+    list<string>::iterator itor;  //定义迭代器
+    itor = urlPath.components.begin();
+    while(itor!=urlPath.components.end())
+    {
+        cout<< *itor++<<endl;
+    }
+    map<string,string>::iterator it;
+    it = urlPath.queryMap.begin();
+    while(it != urlPath.queryMap.end())
+    {
+        cout<< it->first<<endl;
+        cout<< it->second<<endl;
+        it ++;
+    }
     return 0;
 }

@@ -1,5 +1,5 @@
 //
-//  BaseTopic.hpp
+//  Topic.hpp
 //  MIMTopic
 //
 //  Created by wangkai on 2018/5/2.
@@ -10,9 +10,13 @@
 #define BaseTopic_hpp
 
 #include <stdio.h>
+#include <string>
+#include "TopicDefines.h"
 
 namespace MIM {
     
+    int callTopic(std::string &path, TopicRequest &request);
     
+};
 
 #endif /* BaseTopic_hpp */

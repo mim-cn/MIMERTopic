@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8398FA052099F5A70018B38D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398FA042099F5A70018B38D /* main.cpp */; };
+		8398FA122099F6140018B38D /* Topic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398FA102099F6140018B38D /* Topic.cpp */; };
+		8398FA152099FA590018B38D /* UserTopic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398FA132099FA590018B38D /* UserTopic.cpp */; };
+		8398FA182099FA670018B38D /* RelationTopic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398FA162099FA670018B38D /* RelationTopic.cpp */; };
+		8398FA1B2099FA770018B38D /* MessageTopic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398FA192099FA770018B38D /* MessageTopic.cpp */; };
+		8398FA1E2099FE110018B38D /* URLPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398FA1C2099FE110018B38D /* URLPath.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,17 @@
 /* Begin PBXFileReference section */
 		8398FA012099F5A70018B38D /* MIMTopic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MIMTopic; sourceTree = BUILT_PRODUCTS_DIR; };
 		8398FA042099F5A70018B38D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8398FA102099F6140018B38D /* Topic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Topic.cpp; sourceTree = "<group>"; };
+		8398FA112099F6140018B38D /* Topic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Topic.hpp; sourceTree = "<group>"; };
+		8398FA132099FA590018B38D /* UserTopic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UserTopic.cpp; sourceTree = "<group>"; };
+		8398FA142099FA590018B38D /* UserTopic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UserTopic.hpp; sourceTree = "<group>"; };
+		8398FA162099FA670018B38D /* RelationTopic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RelationTopic.cpp; sourceTree = "<group>"; };
+		8398FA172099FA670018B38D /* RelationTopic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RelationTopic.hpp; sourceTree = "<group>"; };
+		8398FA192099FA770018B38D /* MessageTopic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MessageTopic.cpp; sourceTree = "<group>"; };
+		8398FA1A2099FA770018B38D /* MessageTopic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MessageTopic.hpp; sourceTree = "<group>"; };
+		8398FA1C2099FE110018B38D /* URLPath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = URLPath.cpp; sourceTree = "<group>"; };
+		8398FA1D2099FE110018B38D /* URLPath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = URLPath.hpp; sourceTree = "<group>"; };
+		8398FA1F209A04820018B38D /* TopicDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopicDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +73,60 @@
 		8398FA032099F5A70018B38D /* MIMTopic */ = {
 			isa = PBXGroup;
 			children = (
+				8398FA0B2099F5BD0018B38D /* Topic */,
 				8398FA042099F5A70018B38D /* main.cpp */,
 			);
 			path = MIMTopic;
+			sourceTree = "<group>";
+		};
+		8398FA0B2099F5BD0018B38D /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				8398FA0F2099F5ED0018B38D /* Base */,
+				8398FA0C2099F5DF0018B38D /* Message */,
+				8398FA0D2099F5DF0018B38D /* Relation */,
+				8398FA0E2099F5DF0018B38D /* User */,
+			);
+			path = Topic;
+			sourceTree = "<group>";
+		};
+		8398FA0C2099F5DF0018B38D /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				8398FA1A2099FA770018B38D /* MessageTopic.hpp */,
+				8398FA192099FA770018B38D /* MessageTopic.cpp */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		8398FA0D2099F5DF0018B38D /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				8398FA172099FA670018B38D /* RelationTopic.hpp */,
+				8398FA162099FA670018B38D /* RelationTopic.cpp */,
+			);
+			path = Relation;
+			sourceTree = "<group>";
+		};
+		8398FA0E2099F5DF0018B38D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8398FA142099FA590018B38D /* UserTopic.hpp */,
+				8398FA132099FA590018B38D /* UserTopic.cpp */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		8398FA0F2099F5ED0018B38D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8398FA1F209A04820018B38D /* TopicDefines.h */,
+				8398FA112099F6140018B38D /* Topic.hpp */,
+				8398FA102099F6140018B38D /* Topic.cpp */,
+				8398FA1D2099FE110018B38D /* URLPath.hpp */,
+				8398FA1C2099FE110018B38D /* URLPath.cpp */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8398FA152099FA590018B38D /* UserTopic.cpp in Sources */,
+				8398FA122099F6140018B38D /* Topic.cpp in Sources */,
 				8398FA052099F5A70018B38D /* main.cpp in Sources */,
+				8398FA1B2099FA770018B38D /* MessageTopic.cpp in Sources */,
+				8398FA1E2099FE110018B38D /* URLPath.cpp in Sources */,
+				8398FA182099FA670018B38D /* RelationTopic.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

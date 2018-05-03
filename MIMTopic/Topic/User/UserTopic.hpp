@@ -10,5 +10,14 @@
 #define UserTopic_hpp
 
 #include <stdio.h>
+#include <list>
+#include <string>
+#include "TopicDefines.h"
+
+using namespace std;
+
+namespace User {
+    int receiveRequest(list<string> *components, TopicRequest &request);
+}
 
 #endif /* UserTopic_hpp */

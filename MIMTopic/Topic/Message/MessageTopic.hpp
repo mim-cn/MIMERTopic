@@ -10,5 +10,14 @@
 #define MessageTopic_hpp
 
 #include <stdio.h>
+#include <list>
+#include <string>
+#include "TopicDefines.h"
+
+using namespace std;
+
+namespace Message {
+    int receiveRequest(list<string> *components, TopicRequest &request);
+}
 
 #endif /* MessageTopic_hpp */

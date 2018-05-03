@@ -7,3 +7,9 @@
 //
 
 #include "MessageTopic.hpp"
+
+namespace Message {
+    int receiveRequest(list<string> *components, TopicRequest &request) {
+        return TOPIC_OK;
+    }
+}

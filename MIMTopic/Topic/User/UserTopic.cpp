@@ -7,3 +7,16 @@
 //
 
 #include "UserTopic.hpp"
+
+namespace User {
+    
+//    Profile
+    
+//    Account
+    
+    
+    int receiveRequest(list<string> *components, TopicRequest &request) {
+        
+        return TOPIC_OK;
+    }
+}

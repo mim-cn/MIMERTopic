@@ -7,3 +7,9 @@
 //
 
 #include "RelationTopic.hpp"
+
+namespace Relation {
+    int receiveRequest(list<string> *components, TopicRequest &request) {
+        return TOPIC_OK;
+    }
+}

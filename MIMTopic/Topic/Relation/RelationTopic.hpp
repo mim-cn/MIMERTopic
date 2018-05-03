@@ -10,5 +10,14 @@
 #define RelationTopic_hpp
 
 #include <stdio.h>
+#include <list>
+#include <string>
+#include "TopicDefines.h"
+
+using namespace std;
+
+namespace Relation {
+    int receiveRequest(list<string> *components, TopicRequest &request);
+}
 
 #endif /* RelationTopic_hpp */
